@@ -27,7 +27,7 @@ class App extends React.Component {
   handleRangeIncrease() {
     this.setState(function (prevState) {
       if (prevState.rangeInputValue < 218) {
-        const newRangeInputValue = prevState.rangeInputValue + 5;
+        const newRangeInputValue = +prevState.rangeInputValue + 5;
         const newState = { rangeInputValue: newRangeInputValue };
         return newState;
       } else {
